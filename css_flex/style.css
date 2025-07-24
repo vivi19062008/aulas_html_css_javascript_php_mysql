@@ -1,0 +1,152 @@
+
+/*
+container é a tag pai
+flex-direction = sentido do flex
+justify-content = alinhamento dos elementos do container no eixo principal
+align-itens = alinha os elementos no eixo perpendicular
+flex-wrap = quebra de linha (padrão no wrap)
+align-content = alinhar os elementos em mais de uma linha
+gap = coloca espaço entre os elementos em todos os lados
+gap
+row-gap
+column-gap
+
+NOS ELEMENTOS FILHO
+order = 0 -> padrão Ordena os blocos. Os números podem ser negativos
+flew-grow = pode ou não crescer. Cresce em proporção.
+flex-shrink = pode ou não encolher. 
+flex-basis = define largura 
+flex = agrega grow/shrink/basis
+align-self = alinha um único elemento
+
+Jogos para treinar
+https://flexboxfroggy.com/#pt-br
+https://mastery.games/flexboxzombies/...
+https://www.flexboxdefense.com
+
+*/
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: center;
+    row-gap: 10px;
+    column-gap: 30px;
+
+    /* INDIFERENTE */
+    background-color: antiquewhite;
+    padding: 16px;
+    height: 500px;
+}
+
+.bloco-1 {
+    background-color: aquamarine;
+    padding: 15px;
+    width: 50px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex: 0 0 auto;
+    align-self: flex-start;
+}
+
+.bloco-2 {
+    background-color: rgb(255, 214, 127);
+    padding: 15px;
+    width: 50px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.bloco-3 {
+    background-color: rgb(197, 127, 255);
+    padding: 15px;
+    width: 50px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.bloco-4 {
+    background-color: rgb(127, 146, 255);
+    padding: 15px;
+    width: 50px;
+}
+
+.bloco-5 {
+    background-color: rgb(129, 127, 255);
+    padding: 15px;
+    width: 50px;
+}
+
+.bloco-6 {
+    background-color: rgb(255, 157, 127);
+    padding: 15px;
+    width: 50px;
+}
+
+.bloco-7 {
+    background-color: rgb(240, 28, 28);
+    padding: 15px;
+    width: 50px;
+}
+
+.bloco-8 {
+    background-color: rgb(169, 74, 247);
+    padding: 15px;
+    width: 50px;
+}
+
+.bloco-9 {
+    background-color: rgb(245, 44, 77);
+    padding: 15px;
+    width: 50px;
+}
+
+.bloco-10 {
+    background-color: rgb(85, 233, 93);
+    padding: 15px;
+    width: 50px;
+}
+
+.bloco-11 {
+    background-color: rgb(176, 245, 15);
+    padding: 15px;
+    width: 50px;
+}
+
+.bloco-12 {
+    background-color: rgb(166, 230, 183);
+    padding: 15px;
+    width: 50px;
+}
+
+.bloco-13 {
+    background-color: rgb(21, 183, 204);
+    padding: 15px;
+    width: 50px;
+}
+
+.bloco-14 {
+    background-color: rgb(29, 202, 13);
+    padding: 15px;
+    width: 50px;
+}
+
+.bloco-15 {
+    background-color: rgb(212, 192, 233);
+    padding: 15px;
+    width: 50px;
+}
+
+.bloco-1, .bloco-2, .bloco-3, .bloco-4,
+.bloco-5, .bloco-6, .bloco-7, .bloco-8,
+.bloco-9, .bloco-10, .bloco-11, .bloco-12,
+.bloco-13, .bloco-14, .bloco-15 {
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+}
