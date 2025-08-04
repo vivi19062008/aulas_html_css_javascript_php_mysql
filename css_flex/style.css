@@ -36,28 +36,28 @@ https://www.flexboxdefense.com
 
 .container {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    align-content: left;
-    row-gap: 10px;
-    column-gap: 30px;
+    align-items: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+    row-gap: 20px;
+    column-gap: 10px;
 
     /* INDIFERENTE */
-    background-color: rgb(33, 236, 192);
-    padding: 16px;
-    height: 500px;
+    background-color: rgb(5, 116, 55);
+    padding: 300px;
+    height: 200px;
 }
 
 .bloco-1 {
-    background-color: rgb(19, 131, 93);
+    background-color: rgb(83, 216, 172);
     padding: 15px;
     width: 50px;
     flex-grow: 20px;
     flex-shrink: 1;
     flex: 0 1 auto;
-    align-self: first baseline;
+   align-content: center;
 }
 
 .bloco-2 {
