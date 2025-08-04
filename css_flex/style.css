@@ -25,30 +25,39 @@ https://mastery.games/flexboxzombies/...
 https://www.flexboxdefense.com
 
 */
+
+:root{
+    --tamanho: 40px;
+    --altura: 30px;
+    --titulo_principal : 25px
+    --titulo_secundario: 30px
+    --texto: 19px
+}
+
 .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    align-content: center;
+    align-content: left;
     row-gap: 10px;
     column-gap: 30px;
 
     /* INDIFERENTE */
-    background-color: antiquewhite;
+    background-color: rgb(33, 236, 192);
     padding: 16px;
     height: 500px;
 }
 
 .bloco-1 {
-    background-color: aquamarine;
+    background-color: rgb(19, 131, 93);
     padding: 15px;
     width: 50px;
-    flex-grow: 0;
+    flex-grow: 20px;
     flex-shrink: 1;
-    flex: 0 0 auto;
-    align-self: flex-start;
+    flex: 0 1 auto;
+    align-self: first baseline;
 }
 
 .bloco-2 {
