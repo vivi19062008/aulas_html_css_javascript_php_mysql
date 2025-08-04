@@ -57,7 +57,7 @@ https://www.flexboxdefense.com
     flex-grow: 20px;
     flex-shrink: 1;
     flex: 0 1 auto;
-   align-content: center;
+   align-content: left;
 }
 
 .bloco-2 {
